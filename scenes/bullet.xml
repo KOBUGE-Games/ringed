@@ -102,7 +102,7 @@
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -57.0116, -21.2897 </vector2>
+							<vector2> -18.0355, -9.83294 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -122,7 +122,7 @@
 							<string> "snap_step" </string>
 							<vector2> 10, 10 </vector2>
 							<string> "zoom" </string>
-							<real> 14.400333 </real>
+							<real> 32.718609 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -219,12 +219,13 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 1 </int>
+							<int> 3 </int>
 							<string> "sources" </string>
-							<array  len="3" shared="false">
+							<array  len="4" shared="false">
 								<string> "res://scripts/bullet.gd" </string>
 								<string> "res://scripts/player.gd" </string>
 								<string> "res://scripts/enemy_1.gd" </string>
+								<string> "res://scripts/main.gd" </string>
 							</array>
 						</dictionary>
 					</dictionary>
