@@ -29,6 +29,8 @@ func _process(delta):
 	background.set_region_rect(get_viewport_rect()) # And set the region of the background
 
 func _fixed_process(delta):
+
+
 	time += delta # Increase the time left till the next spider by the time elapsed
 	if time > 1: # Enough time had passed
 		time = 0 # Reset the timer

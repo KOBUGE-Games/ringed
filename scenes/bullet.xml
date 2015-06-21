@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="4" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+<resource_file type="PackedScene" subresource_count="4" version="1.1" version_name="Godot Engine v1.1.stable.custom_build">
 	<ext_resource path="res://scripts/bullet.gd" type="Script"></ext_resource>
 	<ext_resource path="res://gfx/bullet.png" type="Texture"></ext_resource>
 	<resource type="CircleShape2D" path="local://1">
@@ -14,7 +14,7 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="55">
+			<string_array  len="70">
 				<string> "bullet" </string>
 				<string> "RigidBody2D" </string>
 				<string> "_import_path" </string>
@@ -70,13 +70,28 @@
 				<string> "CollisionShape2D" </string>
 				<string> "shape" </string>
 				<string> "trigger" </string>
+				<string> "Light2D" </string>
+				<string> "enabled" </string>
+				<string> "scale" </string>
+				<string> "color" </string>
+				<string> "energy" </string>
+				<string> "range/height" </string>
+				<string> "range/z_min" </string>
+				<string> "range/z_max" </string>
+				<string> "range/layer_min" </string>
+				<string> "range/layer_max" </string>
+				<string> "range/item_mask" </string>
+				<string> "shadow/enabled" </string>
+				<string> "shadow/buffer_size" </string>
+				<string> "shadow/esm_multiplier" </string>
+				<string> "shadow/item_mask" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 3 </int>
+			<int> 4 </int>
 			<string> "nodes" </string>
-			<int_array  len="163"> 				-1, -1, 1, 0, -1, 37, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 3, 14, 9, 15, 10, 16, 8, 17, 11, 18, 3, 19, 12, 20, 13, 21, 2, 22, 5, 23, 2, 24, 8, 25, 3, 26, 14, 27, 1, 28, 8, 29, 1, 30, 4, 31, 5, 32, 15, 33, 15, 34, 16, 35, 17, 36, 18, 37, 19, 38, 2, 0, 0, 0, 39, 39, -1, 22, 2, 0, 3, 1, 4, 2, 5, 2, 40, 3, 6, 3, 7, 20, 8, 5, 9, 6, 10, 3, 11, 1, 41, 21, 42, 1, 43, 4, 44, 8, 45, 8, 46, 3, 47, 3, 48, 12, 49, 22, 50, 8, 51, 23, 0, 0, 0, 52, 52, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 24, 8, 5, 9, 6, 10, 12, 11, 1, 53, 9, 54, 8, 0 </int_array>
+			<int_array  len="224"> 				-1, -1, 1, 0, -1, 37, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 3, 14, 9, 15, 10, 16, 8, 17, 11, 18, 3, 19, 12, 20, 13, 21, 2, 22, 5, 23, 2, 24, 8, 25, 3, 26, 14, 27, 1, 28, 8, 29, 1, 30, 4, 31, 5, 32, 15, 33, 15, 34, 16, 35, 17, 36, 18, 37, 19, 38, 2, 0, 0, 0, 39, 39, -1, 22, 2, 0, 3, 1, 4, 2, 5, 2, 40, 3, 6, 3, 7, 20, 8, 5, 9, 6, 10, 3, 11, 1, 41, 21, 42, 1, 43, 4, 44, 8, 45, 8, 46, 3, 47, 3, 48, 12, 49, 22, 50, 8, 51, 23, 0, 0, 0, 52, 52, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 24, 8, 5, 9, 6, 10, 12, 11, 1, 53, 9, 54, 8, 0, 0, 0, 55, 55, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 12, 11, 1, 56, 1, 41, 25, 43, 4, 57, 2, 58, 22, 59, 2, 19, 12, 60, 5, 61, 26, 62, 27, 63, 12, 64, 12, 65, 3, 66, 8, 67, 28, 68, 29, 69, 3, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="25" shared="false">
+			<array  len="30" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -219,7 +234,7 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 3 </int>
+							<int> 0 </int>
 							<string> "sources" </string>
 							<array  len="4" shared="false">
 								<string> "res://scripts/bullet.gd" </string>
@@ -244,6 +259,10 @@
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
 				<vector2> 0, -1.73607 </vector2>
+				<resource name=""></resource>				<int> -1024 </int>
+				<int> 1024 </int>
+				<int> 2048 </int>
+				<real> 80 </real>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>
